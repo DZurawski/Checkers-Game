@@ -1,0 +1,60 @@
+.blackBackground {
+    -fx-background-color: black;
+}
+
+.standardBackground {
+    -fx-background-color: 
+        black,
+        linear-gradient(slateblue, darkslategray),
+        linear-gradient(darkslategray, slateblue),
+        linear-gradient(darkslateblue, black);
+}
+
+.notationBorder {
+    -fx-text-fill: ghostwhite;
+    -fx-font: 16px "Georgia";
+}
+
+.blackTile {
+    -fx-background-color: 
+        black,
+        linear-gradient(slateblue, darkslateblue),
+        linear-gradient(darkslateblue, slateblue),
+        linear-gradient(darkslateblue, slateblue);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+}
+
+.redTile {
+    -fx-background-color: 
+        black,
+        linear-gradient(slategrey, darkslategray),
+        linear-gradient(darkslategray, slategray),
+        linear-gradient(darkslategray, slategray);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+}
+
+.blackTile:hover, .redTile:hover {
+    -fx-effect: innershadow(three-pass-box, white, 2, 1, 0, 0);
+}
+
+.blackTile:possible, .redTile:possible {
+    -fx-effect: innershadow(three-pass-box, lightgray, 2, 1, 0, 0);
+}
+
+.blackMan {
+    -fx-image: url("/images/black_man.png");
+}
+
+.redMan {
+    -fx-image: url("/images/purple_man.png");
+}
+
+.blackKing {
+    -fx-image: url("/images/black_king.png");
+}
+
+.redKing {
+    -fx-image: url("/images/purple_king.png");
+}
